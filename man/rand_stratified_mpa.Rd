@@ -19,6 +19,10 @@ rand_stratified_mpa(
 
 \item{areas}{is a vector of mpa area coverage in m^2}
 
+\item{grid_strata}{strata for the grid}
+
+\item{area_strata}{strata for the area}
+
 \item{adj_edgelist}{is the self-intersecting neighbours edgelist of grid, could be done 'in function' but that would slow it down. Used to create contiguous multi-grid cell MPA's.}
 
 \item{buff_edgelist}{is the intersecting edgelist of grid with a buffered grid, could be done 'in function' but that would slow it down. Used to guarantee minimum distances (buffer distance) between MPAs.}
@@ -30,4 +34,7 @@ rand_stratified_mpa(
 }
 \description{
 Randomly generates a stratified network of MPAs
+}
+\examples{
+#insert example here
 }

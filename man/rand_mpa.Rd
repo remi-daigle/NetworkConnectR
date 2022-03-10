@@ -23,3 +23,6 @@ rand_mpa(grid, areas, adj_edgelist, buff_edgelist = adj_edgelist, max_edge = 4)
 \description{
 Randomly generates a network of MPAs
 }
+\examples{
+#insert example here
+}

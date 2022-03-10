@@ -3,4 +3,7 @@
 export("%>%")
 export(rand_mpa)
 export(rand_stratified_mpa)
+import(rlang)
+importFrom(glue,glue)
+importFrom(lifecycle,deprecated)
 importFrom(magrittr,"%>%")

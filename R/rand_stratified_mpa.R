@@ -2,14 +2,15 @@
 #'
 #' Randomly generates a stratified network of MPAs
 #'
-#' @param grid_strata
-#' @param area_strata
+#' @param grid_strata strata for the grid
+#' @param area_strata strata for the area
 #' @inheritParams rand_mpa
 #'
 #' @return
 #' @export
 #'
 #' @examples
+#' #insert example here
 rand_stratified_mpa <- function(grid,areas,grid_strata,area_strata,adj_edgelist,buff_edgelist=adj_edgelist,max_edge=4){
   purrr::map(unique(grid_strata),function(s){
     rand_mpa(grid,

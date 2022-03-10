@@ -12,6 +12,7 @@
 #' @export
 #'
 #' @examples
+#' #insert example here
 rand_mpa <- function(grid,areas,adj_edgelist,buff_edgelist=adj_edgelist,max_edge=4){
   # find number of grid cells for each area
   cells <- floor(areas/as.numeric(sf::st_area(grid[1,])))
