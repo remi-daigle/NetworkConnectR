@@ -5,7 +5,10 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/remi-daigle/NetworkConnectR/workflows/R-CMD-check/badge.svg)](https://github.com/remi-daigle/NetworkConnectR/actions)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/NetworkConnectR)](https://CRAN.R-project.org/package=NetworkConnectR)
 <!-- badges: end -->
 
 The goal of NetworkConnectR is to …
