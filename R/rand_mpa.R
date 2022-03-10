@@ -14,7 +14,7 @@
 #' @examples
 rand_mpa <- function(grid,areas,adj_edgelist,buff_edgelist=adj_edgelist,max_edge=4){
   # find number of grid cells for each area
-  cells <- floor(areas/as.numeric(st_area(grid[1,])))
+  cells <- floor(areas/as.numeric(sf::st_area(grid[1,])))
   network <- NULL
   for(finalsize in cells){
 
@@ -68,8 +68,8 @@ rand_mpa <- function(grid,areas,adj_edgelist,buff_edgelist=adj_edgelist,max_edge
 
   # join network with grid
   return(network %>%
-           left_join(grid %>%
-                       mutate(grid_cell=as.numeric(row.names(.))),by = "grid_cell") %>%
-           st_as_sf()
+           dplyr::left_join(grid %>%
+                       dplyr::mutate(grid_cell=as.numeric(row.names(.))),by = "grid_cell") %>%
+           sf::st_as_sf()
   )
 }

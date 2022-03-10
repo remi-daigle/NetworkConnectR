@@ -1,11 +1,15 @@
 Package: NetworkConnectR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: A Package to Assess Connectivity in Networks of MPAs
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Author: Remi Daigle, Ryan Stanley, Christine Stortini
+Maintainer: Remi Daigle <Remi.Daigle@dfo-mpo.gc.ca>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    magrittr
